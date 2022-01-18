@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FaFaFa">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                     <ImageView
+                        tools:src="@drawable/ic_launcher_foreground"
+                        android:id="@+id/ivImageUrl"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvNameBold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Nome:"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivImageUrl" />
+
+                    <TextView
+                        android:id="@+id/tvNameText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Irmao do Jorel"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvNameBold" />
+
+                    <TextView
+                        android:id="@+id/tvYEarBold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Ano:"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.968"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvNameText" />
+
+                    <TextView
+                        android:id="@+id/tvYearText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvYEarBold" />
+
+
+                    <TextView
+                        android:id="@+id/tvDescriptionBold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Descrição:"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvYearText" />
+
+                    <TextView
+                        android:id="@+id/tvDescriptionText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Irmão do Jorel (nome real desconhecido) é o protagonista da série homônima. Ele é o caçula da família, tendo apenas 8 anos. Ele mora com os pais, as avós e os irmãos, juntamente de seus animais de estimação."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.875"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvDescriptionBold" />
+
+                    <TextView
+                        android:id="@+id/tvPhraseBold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Frase:"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvDescriptionText" />
+
+                    <TextView
+                        android:id="@+id/tvPhraseText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Todos me chamam de Irmão do Jorel, mas meu verdadeiro nome é..."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPhraseBold" />
+
+                    <TextView
+                        android:id="@+id/tvBiographyBold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Biografia:"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPhraseText" />
+
+                    <TextView
+                        android:id="@+id/tvBiographyText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Seu nome é desconhecido pela maioria das pessoas fora da sua família, pois tem sua popularidade ofuscada por seu irmão Jorel, conhecido por toda a escola, como um interesse amoroso para as meninas e um ídolo para os meninos. Sempre que tenta falar seu nome, é interrompido por alguém, normalmente Lara. Quando outra pessoa de sua família fala seu nome, a cena é cortada antes que o nome seja dito.\nTem muita imaginação, adora brincar com comida, 'tocar' sua raquete de tênis e assistir aos filmes de Steve Magal com sua avó Gigi. Ele estuda na Escola Pônei Encantado, na mesma sala que sua melhor amiga Lara e seu interesse amoroso, Ana Catarina. Desde que Lara se mudou para o Japão em Elefante de Porcelana, Irmão do Jorel parece estar revelando um amor por ela.\nAlém de Lara, Irmão do Jorel também é muito amigo de Marcinho; em 'Aterrorizante Vida Adulta', os três se unem para recuperar o carro de Seu Edson.\nEle também forma facilmente amizades com outras crianças de sua idade, mas não se enturma muito bem com os amigos mais velhos de Jorel. Apesar disso, ele tem um bom relacionamento com Carlos Felino e Reginaldo, que são amigos de seu outro irmão Nico com quem formam uma banda chamada Cuecas em Chamas. Irmão do Jorel, ás vezes, ajuda eles na banda, como no episódio Os Incríveis Lateenagers onde ele se junta á Cuecas em Chamas para tocar o Tema de Abertura com eles."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvBiographyBold" />
+
+                    <TextView
+                        android:id="@+id/tvAppearanceBold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Aparencia:"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvBiographyText" />
+
+                    <TextView
+                        android:id="@+id/tvAppearanceText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Irmão do Jorel é um garoto extremamente criativo e ingênuo, que, mesmo vivendo ás sombras de seu irmão, sempre arruma um jeito de ser notado. É capaz de criar e acreditar nas mais absurdas histórias. Ele também está sempre disposto a criar algo novo e mudar o mundo de alguma maneira, enfrentando os obstáculos da vida com seu otimismo."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvAppearanceBold" />
+
+
+                    <TextView
+                        android:id="@+id/tvPersonalityBold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Personalidade:"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvAppearanceText" />
+
+                    <TextView
+                        android:id="@+id/tvPersonalityText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Irmão do Jorel é um garoto extremamente criativo e ingênuo, que, mesmo vivendo ás sombras de seu irmão, sempre arruma um jeito de ser notado. É capaz de criar e acreditar nas mais absurdas histórias. Ele também está sempre disposto a criar algo novo e mudar o mundo de alguma maneira, enfrentando os obstáculos da vida com seu otimismo."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPersonalityBold" />
+                    />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

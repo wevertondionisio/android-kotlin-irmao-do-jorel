@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/tvNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="O Fenomenal Capacete com Rodinhas" />
+
+            <TextView
+                android:id="@+id/tvDescriptionBold"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:text="Descrição:"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSeasonBold" />
+
+            <TextView
+                android:id="@+id/tvDescriptionText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionBold"
+                tools:text="O Fenomenal Capacete com Rodinhas é o primeiro episódio da 1ª temporada da série Irmão do Jorel, e o primeiro episódio ao todo." />
+
+            <TextView
+                android:id="@+id/tvSynopsisBold"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:text="Sinopse:"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionText" />
+
+            <TextView
+                android:id="@+id/tvSynopsisText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSynopsisBold"
+                tools:text="Irmão do Jorel quer participar da Grande Corrida Anual de Bicicletas, e, para isso, precisa provar que sabe andar de bicicletas sem rodinhas." />
+
+            <TextView
+                android:id="@+id/tvDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="4dp"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivImageUrl"
+                tools:text="2014-09-29T00:00:00" />
+
+
+            <TextView
+                android:id="@+id/tvSeasonText"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFontText"
+                tools:text="1" />
+
+            <TextView
+                android:id="@+id/tvSeasonBold"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="Temporada"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSeasonText" />
+
+            <TextView
+                android:id="@+id/tvFontText"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+
+                android:layout_marginTop="4dp"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDateText"
+                tools:text="Netflix" />
+
+            <TextView
+                android:id="@+id/ivImageUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameText"
+                tools:src="@drawable/ic_launcher_foreground"
+                tools:text="url" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
